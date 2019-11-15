@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*--------NAV--------*/
+
+nav {
+  display: inline-block;
+  width: 100%;
+  background-color: coral;
+  position: fixed;
+  font-size: 20px;
+}
+
+.logo {
+  float: left;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.menu {
+  float: right;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 20px;
+}
+
+li a {
+  display:  block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+li a:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+/* Welcome Page */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  background-color: coral;
+  height: 100vh;
+  width: 100%;
+}
+
+#welcome-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#welcome-section h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Projects Page */
+
+#projects {
+  background-color: #C3E4FD;
+  height: 100vh;
+}
+
+.project-tiles h2 {
+  margin: 0px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+.container {
+  display: block;
+  padding-top: 100px;
+}
+
+img {
+  width: 100%;
+}
+  
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+  
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.project-tiles label {
+  padding: 100px 20px 20px 20px;
+}
+
+.project-tiles label code {
+  float: right;
+}
+
+/* Contacts Page */
+#profile-link {
+  background-color: #70AE98;
+  height: 30vh;
+  width: 100%;
+}
+
+#profile-link div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  padding-right: 0px;
+}
+
+#profile-link div a{
+  margin: 20px;
+}
+
+
+#GitHubIcon {
+  border-color: black;
+  background-color: black;
+  color: white;
+}
+
+#GitHubIcon:hover {
+  border-color: rgb(77, 77, 77);
+  background-color: rgb(77, 77, 77);
+  color: white;
+}
+
+#LinkedinIcon {
+  border-color: #0077b5;
+  background-color: #0077b5;
+  color:white;
+}
+#LinkedinIcon:hover {
+  border-color: #03a1f7;
+  background-color: #03a1f7;
+  color:white;
+}
+
+#FacebookIcon {
+  border-color: #3b5998;
+  background-color: #3b5998;
+  color:white;
+}
+
+#FacebookIcon:hover {
+  border-color: #5b86e4;
+  background-color: #5b86e4;
+  color:white;
+}
+
+#TopIcon {
+  color:#aad450;
+}
+
+#TwitterIcon {
+  border-color: #38A1F3;
+  background-color: #38A1F3;
+  color:white;
+}
+
+#TwitterIcon:hover {
+  border-color: rgb(88, 181, 252);
+  background-color: rgb(88, 181, 252);
+  color:white;
+}
+
+#GmailIcon {
+  border-color: #DD4B39;
+  background-color: #DD4B39;
+  color: white;
+}
+
+#GmailIcon:hover {
+  border-color: rgb(252, 93, 71);
+  background-color: rgb(252, 93, 71);
+  color: white;
+}
+
+.btn-default{
+  background-color:black;
+  border-color:black;
+  color:dodgerblue;
+  font-size:1.3em;
+}
+
+/*----------MEDIA RESPONSIVE FOR MOBILE---------*/
+
+@media only screen and (max-width: 725px) {
+#welcome-section h1 {
+  font-size: 50px;
+  font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+#welcome-section h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+  
+@media only screen and (max-width: 725px) {
+  #projects {
+  height: 130vh;  
+}
+  }
+
+@media only screen and (max-width: 325px) {
+  #projects {
+  height: 120vh;    
+}
+  }
+ 
+@media only screen and (max-width: 275px) {
+  #projects {
+  height: 105vh;      
+}
+  }  
+
+@media only screen and (max-width: 250px) {
+  #projects {
+  height: 100vh;      
+}
+  }
+
+@media only screen and (max-width: 725px) {
+  .container{
+    display: block;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .project-tiles label {
+    padding: 50px 20px 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 421px)
+{
+  #profile-link{
+    height: 40vh;
+  }
+}
+
+@media only screen and (max-width: 421px)
+{
+  #profile-link div{
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 266px)
+{
+  #profile-link{
+    height: 50vh;
+  }
+}
