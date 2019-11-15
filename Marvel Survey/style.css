@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}  
+
+/* BackGround */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7FFFD4;
+    height: 100vh;
+    width: 100%;
+} 
+
+  /* Survey Form */
+  #title {
+    font-size: 4em;
+}
+
+#description {
+    font-weight: bold;;
+    font-size: 25px;
+}
+
+  /* Form borders */
+  .main-border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px gray solid;
+    background-color: rgb(84, 226, 179);
+    width: 80%;
+    height: 75%;
+}
+
+  /* Text labels */
+#name-label, #email-label, #number-label {
+    padding-top: 25px;
+
+}
+
+/* Textbox Inputs */
+#email, #name {
+    margin-top: 20px;
+}
+
+#number {
+    margin-left: 12px;
+    margin-top: 20px;  
+}
+
+/* Dropdown boxes */
+.container {
+   padding-top: 50px;
+}
+
+#dropdown {
+   font-style: italic;
+   position: relative;
+   margin-left: 90px;
+   margin-bottom: 30px;
+   }

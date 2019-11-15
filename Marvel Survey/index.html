@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <!-- Survey Form -->
+        <header>      
+            <h1 id="title">Survey Form</h1>
+        </header>
+        
+        <!-- Border -->
+        
+        
+        <!-- Title of Form -->
+        <div class="main-border">
+            <div>
+                <p id="description">Your thoughts on Marvel Characters
+                </p>
+            </div>
+                
+            <form id="survey-form" id="name" id="email" id="numbers">
+                    
+                <!-- Name, Email, Age Textbox -->
+            
+                <div class="first">
+                    <label for="name" id="name-label">*Name:
+                    <input type="text" id="name" name="fullname" placeholder="Enter your Name" required><br>
+                    </label>
+                    <label for="email" id="email-label">*Email: 
+                    <input pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"  type="email" id="email" placeholder="Enter your Email" required>
+                    </label><br>
+                    <label for="number" id="number-label">*Age:
+                    <input type="number" min="10" max="150" id="number" name="age" placeholder="Enter your Age" required>
+                    </label><br>
+                </div>
+                <!-- Drop downbox -->
+                <div>
+                    <div class="container">Which one is your favorite original Avenger:</div><br>
+                    <select name="age-group" id="dropdown">
+                        <option value="Captain America">Captain America</option>
+                        <option value="Iron-Man">Iron-Man</option>
+                        <option value="Thor">Thor</option>
+                        <option value="Hulk">Hulk</option>
+                        <option value="Black Widow">Black Widow</option>
+                        <option value="Hawkeye">Hawkeye</option>
+                    </select>
+                </div>
+                <!-- Radio Buttons -->
+                
+                <div>Did you like the original characters?</div>
+                <div class="radio">
+                    <ul style="list-style: none;">
+                    
+                        <li class="radio-label"><label>Yes<input name="radio" value="1" type="radio" class="radio-input"  ></label></li>
+                    
+                        <li class="radio-label"><label>No<input name="radio" value="2" type="radio"  class="radio-input"></label></li>
+                        
+                        <li class="radio-label"><label>Maybe<input name="radio" value="3" type="radio" class="radio-input"></label></li>
+                    </ul>
+                </div>            
+                <!-- Checkboxes! -->
+                <div>Which Avenger teams are your favorites: </div>
+                <div>
+                    <ul style="list-style: none;">
+                    
+                        <li><label class="checkbox-label"><input type="checkbox" name="HYDRA AVENGERS" value="HYDRA AVENGERS" ></label>HYDRA AVENGERS</li>
+                        
+                        <li><label class="checkbox-input"><input class="checkbox-label" type="checkbox" name="ULTIMATES (616)" value="ULTIMATES (616)" ></label>ULTIMATES (616)</li>
+                        
+                        <li><label class="checkbox-label"><input type="checkbox" name="ASTONISHING AVENGERS" value="ASTONISHING AVENGERS">ASTONISHING AVENGERS</label></li>
+                        
+                        <li><label class="checkbox-label"><input type="checkbox" name="ULTIMATES" value="ULTIMATES" class="checkbox-input" >ULTIMATES</label></li>
+                        
+                            <li><label class="checkbox-label"><input  type="checkbox" name="ORIGINAL AVENGERS" value="ORIGINAL AVENGERS" class="checkbox-input"></label>ORIGINAL AVENGERS</li>
+                    </ul>
+                </div>
+                    
+                <!-- Comments -->
+                <div>
+                    <textarea name="comments" id="comments" placeholder="Leave comment here..."></textarea>
+                </div>
+                <div>
+                    <label><input type="submit" name="submit" id="submit" value="Submit"/></label>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
