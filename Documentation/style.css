@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+
+
+
+body {
+  height: 100%;
+  weight: 100%;
+	margin: 0;
+	padding: 0;
+  font-family: 'Oswald', sans-serif;
+  background-color: #E8E8E8;
+}
+
+
+
+/* Nav */
+nav {
+  background: #000000;
+	color: #FFFFFF;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+nav header {
+  font-size: 20px;
+  height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+
+#navbar {
+  position: fixed;
+}
+
+nav a:hover {     
+  background-color: #555;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+} 
+
+nav ul {
+  background-color: #FFF8DC;
+  height: 144px;
+  list-style: none;
+	margin: 0;
+  overflow: auto;
+  padding: 0;
+}
+
+nav li {
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 2px solid #C0C0C0;
+}
+
+nav li:last-child{
+  border-bottom: none;
+}
+
+ul:last-child {
+  padding-bottom: 5px;
+}
+
+a {
+	color: #008CBC;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 10px 0 0 15px;
+  border-style: inset;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+
+
+ol{
+  padding-right: 50px;
+}
+
+div {
+  padding-left: 40px;
+}
+
+#Personality pre {
+  border-style: hidden;
+  border-radius: 5px;
+  background-color: lightgrey;
+  
+}
+
+h4 {
+  font-style: oblique;
+}
+
+p {
+  padding-left: 30px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.60em;
+}
+
+main {
+  margin-top: 220px;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+
+main header {
+  font-size: 25px
+}
+
+.head-title {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 815px) {
+	nav {
+		height: 100%;
+		position: fixed;
+		width: 300px;
+	}
+	nav ul {
+		height: 100%;
+		overflow-y: auto;
+    border-right: 2px solid black;
+	}
+	main {
+    margin-top: 25px;
+		left: 300px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-left: 20px;
+	}
+}
